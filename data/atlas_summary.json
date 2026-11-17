@@ -1,0 +1,172 @@
+{
+  "spectral": {
+    "S1-IMD": {
+      "ENSO 2-7yr": {
+        "mdes_A": 0.685,
+        "mdes_varshare": 0.19,
+        "power_at_max_amp": 1.0,
+        "verdict": "UNDERPOWERED",
+        "span_note": "anchor < MDES <= 2x anchor"
+      },
+      "Solar 9.5-12.5yr": {
+        "mdes_A": 0.557,
+        "mdes_varshare": 0.135,
+        "power_at_max_amp": 1.0,
+        "verdict": "UNDERPOWERED",
+        "span_note": "anchor < MDES <= 2x anchor"
+      },
+      "Long 17-21yr": {
+        "mdes_A": 0.545,
+        "mdes_varshare": 0.129,
+        "power_at_max_amp": 1.0,
+        "verdict": "UNDERPOWERED",
+        "span_note": "anchor < MDES <= 2x anchor"
+      }
+    },
+    "S1-IITM": {
+      "ENSO 2-7yr": {
+        "mdes_A": 0.684,
+        "mdes_varshare": 0.19,
+        "power_at_max_amp": 1.0,
+        "verdict": "UNDERPOWERED",
+        "span_note": "anchor < MDES <= 2x anchor"
+      },
+      "Solar 9.5-12.5yr": {
+        "mdes_A": 0.46,
+        "mdes_varshare": 0.096,
+        "power_at_max_amp": 1.0,
+        "verdict": "TESTABLE",
+        "span_note": "MDES <= anchor and span >= 4x longest period"
+      },
+      "Long 17-21yr": {
+        "mdes_A": 0.433,
+        "mdes_varshare": 0.086,
+        "power_at_max_amp": 1.0,
+        "verdict": "TESTABLE",
+        "span_note": "MDES <= anchor and span >= 4x longest period"
+      }
+    },
+    "S3-IIP": {
+      "Kitchin 36-60mo": {
+        "mdes_A": 0.429,
+        "mdes_varshare": 0.084,
+        "power_at_max_amp": 1.0,
+        "verdict": "UNDERPOWERED",
+        "span_note": "MDES <= anchor; verdict capped at UNDERPOWERED (span < 4x longest period)"
+      },
+      "Juglar 84-132mo": {
+        "mdes_A": 0.359,
+        "mdes_varshare": 0.061,
+        "power_at_max_amp": 1.0,
+        "verdict": "UNTESTABLE",
+        "span_note": "span 13.9yr < 2x longest period 11.0yr (span rule)"
+      }
+    },
+    "S2-GDP-K": {
+      "Kitchin 12-20q": {
+        "mdes_A": 1.042,
+        "mdes_varshare": 0.352,
+        "power_at_max_amp": 0.95,
+        "verdict": "UNDERPOWERED",
+        "span_note": "anchor < MDES <= 2x anchor; verdict capped at UNDERPOWERED (span < 4x longest period)"
+      }
+    },
+    "S4-CPI-K": {
+      "Kitchin 36-60mo": {
+        "mdes_A": 0.747,
+        "mdes_varshare": 0.218,
+        "power_at_max_amp": 0.995,
+        "verdict": "UNDERPOWERED",
+        "span_note": "anchor < MDES <= 2x anchor; verdict capped at UNDERPOWERED (span < 4x longest period)"
+      }
+    },
+    "S5-WPI-K": {
+      "Kitchin 36-60mo": {
+        "mdes_A": 0.697,
+        "mdes_varshare": 0.195,
+        "power_at_max_amp": 1.0,
+        "verdict": "UNDERPOWERED",
+        "span_note": "anchor < MDES <= 2x anchor; verdict capped at UNDERPOWERED (span < 4x longest period)"
+      }
+    },
+    "S6-Credit": {
+      "Kitchin 36-60mo": {
+        "mdes_A": 0.504,
+        "mdes_varshare": 0.113,
+        "power_at_max_amp": 1.0,
+        "verdict": "TESTABLE",
+        "span_note": "MDES <= anchor and span >= 4x longest period"
+      },
+      "Juglar 84-132mo": {
+        "mdes_A": 0.469,
+        "mdes_varshare": 0.099,
+        "power_at_max_amp": 1.0,
+        "verdict": "UNDERPOWERED",
+        "span_note": "MDES <= anchor; verdict capped at UNDERPOWERED (span < 4x longest period)"
+      }
+    },
+    "S7-Trade": {
+      "Kitchin 36-60mo": {
+        "mdes_A": 0.422,
+        "mdes_varshare": 0.082,
+        "power_at_max_amp": 1.0,
+        "verdict": "TESTABLE",
+        "span_note": "MDES <= anchor and span >= 4x longest period"
+      },
+      "Juglar 84-132mo": {
+        "mdes_A": 0.374,
+        "mdes_varshare": 0.065,
+        "power_at_max_amp": 1.0,
+        "verdict": "UNDERPOWERED",
+        "span_note": "MDES <= anchor; verdict capped at UNDERPOWERED (span < 4x longest period)"
+      }
+    }
+  },
+  "regression": {
+    "S4-T4": {
+      "mdes": 0.28908049097159777,
+      "anchor": 0.25,
+      "verdict": "UNDERPOWERED"
+    },
+    "S5-T4": {
+      "mdes": 0.3942006695067242,
+      "anchor": 0.25,
+      "verdict": "UNDERPOWERED"
+    },
+    "S9-T5": {
+      "mdes": 0.15885846800577821,
+      "anchor": 0.3,
+      "verdict": "UNTESTABLE"
+    },
+    "S8-T6-primary": {
+      "mdes": 0.19977487794225302,
+      "anchor": 0.25,
+      "verdict": "TESTABLE",
+      "n_eff": 359.2452830188679
+    },
+    "S8-T6-deficit": {
+      "mdes": 0.2905816406432771,
+      "anchor": 0.5,
+      "verdict": "TESTABLE",
+      "n_eff": 359.2452830188679
+    },
+    "S2-T7-beta": {
+      "mdes_slope": 0.011201558641433079,
+      "anchor_slope": 0.013628103226460122,
+      "mdes_lambda_pct": 1.210611741087658,
+      "anchor_lambda_pct": 1.5,
+      "verdict": "TESTABLE"
+    },
+    "S2-T7-sigma": {
+      "mdes_per_yr": 0.0029932475994954104,
+      "verdict": "UNDERPOWERED"
+    }
+  },
+  "verdict_counts": {
+    "UNDERPOWERED": 11,
+    "UNTESTABLE": 8,
+    "TESTABLE": 4
+  },
+  "graded_cells": 23,
+  "na_cells": 59
+}

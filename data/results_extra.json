@@ -1,0 +1,62 @@
+{
+  "allindia_incl_2026": {
+    "ENSO 2-7yr": [
+      "not supported",
+      0.6175
+    ],
+    "Solar 9.5-12.5yr": [
+      "not supported",
+      0.3145
+    ],
+    "Long 17-21yr": [
+      "not supported",
+      0.2505
+    ]
+  },
+  "welch_sensitivity_allindia_imd": {
+    "ENSO 2-7yr": [
+      "not supported",
+      0.224
+    ],
+    "Solar 9.5-12.5yr": [
+      "not supported",
+      0.422
+    ],
+    "Long 17-21yr": [
+      "not supported",
+      0.42
+    ]
+  },
+  "hurst_surrogate_check": {
+    "IMD All-India JJAS 1901-2025": {
+      "H": 0.7483933804859716,
+      "surr_mean": 0.6274808434644559,
+      "surr_p95": 0.7298182985336891,
+      "p_H_above_surr": 0.025
+    },
+    "IITM All-India JJAS 1871-2016": {
+      "H": 0.6712917770085907,
+      "surr_mean": 0.5845601024081684,
+      "surr_p95": 0.6948047095100505,
+      "p_H_above_surr": 0.11
+    }
+  },
+  "hurst": {
+    "IMD All-India JJAS 1901-2025": 0.7483933804859716,
+    "IITM All-India JJAS 1871-2016": 0.6712917770085907
+  },
+  "monsoon_means_mm": {
+    "IMD 1901-2025": 888.0160000000001,
+    "IITM 1901-2016 (overlap)": 843.6293103448276,
+    "IMD 1901-2016 (overlap)": 887.326724137931
+  },
+  "imd_vs_iitm_overlap": {
+    "mean_abs_diff_mm": 43.93879310344829,
+    "corr": 0.9469971277119466
+  },
+  "iip": {
+    "n_months": 168,
+    "span": "2012-04 to 2026-03",
+    "missing_months": 0
+  }
+}

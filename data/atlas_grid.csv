@@ -1,0 +1,83 @@
+series_id,series,test_id,test,applicable,verdict,mdes,mdes_units,anchor,clean_n,clean_span,reason,mdes_detail
+S1,Monsoon rainfall (IMD + IITM),T1,Kitchin cycle (3-5 yr),no,,,,,,,Business-cycle bands are not monsoon claims; monsoon periodicities are graded at T3.,
+S1,Monsoon rainfall (IMD + IITM),T2,Juglar cycle (7-11 yr),no,,,,,,,Business-cycle bands are not monsoon claims; monsoon periodicities are graded at T3.,
+S1,Monsoon rainfall (IMD + IITM),T3,Monsoon periodicities,yes,UNDERPOWERED,IMD 0.685 / IITM 0.684,"sinusoid amplitude, sd units",0.47 sd (10% variance share),125 (IMD) / 146 (IITM),IMD 1901-2025; IITM 1871-2016,"Band ENSO 2-7yr: joint grade = worse of the two rulers (IMD UNDERPOWERED, IITM UNDERPOWERED).","IMD varshare 0.19, IITM varshare 0.19; pilot verdicts on the real series: not supported in this band on either ruler (pilot REPORT sec 2)."
+S1,Monsoon rainfall (IMD + IITM),T3,Monsoon periodicities,yes,UNDERPOWERED,IMD 0.557 / IITM 0.46,"sinusoid amplitude, sd units",0.47 sd (10% variance share),125 (IMD) / 146 (IITM),IMD 1901-2025; IITM 1871-2016,"Band Solar 9.5-12.5yr: joint grade = worse of the two rulers (IMD UNDERPOWERED, IITM TESTABLE).","IMD varshare 0.135, IITM varshare 0.096; pilot verdicts on the real series: not supported in this band on either ruler (pilot REPORT sec 2)."
+S1,Monsoon rainfall (IMD + IITM),T3,Monsoon periodicities,yes,UNDERPOWERED,IMD 0.545 / IITM 0.433,"sinusoid amplitude, sd units",0.47 sd (10% variance share),125 (IMD) / 146 (IITM),IMD 1901-2025; IITM 1871-2016,"Band Long 17-21yr: joint grade = worse of the two rulers (IMD UNDERPOWERED, IITM TESTABLE).","IMD varshare 0.129, IITM varshare 0.086; pilot verdicts on the real series: not supported in this band on either ruler (pilot REPORT sec 2)."
+S1,Monsoon rainfall (IMD + IITM),T4,Phillips curve,no,,,,,,,No inflation/output-gap pair; Phillips is graded where the inflation ruler lives (S4/S5).,
+S1,Monsoon rainfall (IMD + IITM),T5,Okun's law,no,,,,,,,No output-unemployment pair.,
+S1,Monsoon rainfall (IMD + IITM),T6,Political budget cycle,no,,,,,,,Not a fiscal panel; the Khemani design is graded at S8.,
+S1,Monsoon rainfall (IMD + IITM),T7,Beta/sigma convergence,no,,,,,,,No cross-unit income panel.,
+S1,Monsoon rainfall (IMD + IITM),T8,Taylor rule / natural rate,no,,,,,,,No price/output/policy-rate system; graded at S4.,
+S2,GDP & national accounts (incl. GSDP),T1,Kitchin cycle (3-5 yr),yes,UNDERPOWERED,1.042,"sinusoid amplitude, sd units",0.59 sd (15% variance share),58,Q1 2011-12-Q2 2025-26 (base 2011-12),MDES varshare 0.352; anchor < MDES <= 2x anchor; verdict capped at UNDERPOWERED (span < 4x longest period).,power at max amp (1.20 sd) = 0.95
+S2,GDP & national accounts (incl. GSDP),T2,Juglar cycle (7-11 yr),yes,UNTESTABLE,,"sinusoid amplitude, sd units",0.59 sd (15% variance share),58,Q1 2011-12-Q2 2025-26 (base 2011-12),"Span rule: clean span 14.5 yr < 2x longest Juglar period (22 yr); fewer than two full cycles - no simulation run, per registration sec 3a.",
+S2,GDP & national accounts (incl. GSDP),T3,Monsoon periodicities,no,,,,,,,Monsoon periodicity bands are monsoon-specific claims (Kane 1990); graded at S1.,
+S2,GDP & national accounts (incl. GSDP),T4,Phillips curve,no,,,,,,,Graded where the inflation ruler lives (S4/S5); GDP supplies the partner gap series.,
+S2,GDP & national accounts (incl. GSDP),T5,Okun's law,no,,,,,,,"Same pair graded at S9; the binding ruler is unemployment, not output.",
+S2,GDP & national accounts (incl. GSDP),T6,Political budget cycle,no,,,,,,,The registered Khemani design is a state-fiscal panel; graded at S8.,
+S2,GDP & national accounts (incl. GSDP),T7,Beta/sigma convergence,yes,TESTABLE,1.21,"% per year (minimum detectable convergence speed, beta)",1.5 %/yr (Cashin & Sahay 1996),"28 states, one 13-year long difference","per-capita GSDP, base 2011-12: 2011-12 to 2023-24","Beta: MDES slope 0.0112/yr vs anchor slope 0.0136/yr - the cross-section can just detect a Cashin-Sahay-speed convergence over one clean decade. Sigma sub-grade: UNDERPOWERED (MDES trend 0.0030 log-points/yr vs literature drift 0.001-0.003/yr). Caveat: a single long difference containing COVID; the verdict grades the ruler's resolution, not any convergence claim.","sigma_eps 1.1 pp/yr, sd(log initial pc income) 0.52 (registered inputs)."
+S2,GDP & national accounts (incl. GSDP),T8,Taylor rule / natural rate,no,,,,,,,"Graded at S4, where the binding price ruler lives; same joint span.",
+S3,IIP,T1,Kitchin cycle (3-5 yr),yes,UNDERPOWERED,0.429,"sinusoid amplitude, sd units",0.59 sd (15% variance share),167,Apr 2012-Mar 2026 growth (base 2011-12),MDES varshare 0.084; MDES <= anchor; verdict capped at UNDERPOWERED (span < 4x longest period).,power at max amp (1.20 sd) = 1.0
+S3,IIP,T2,Juglar cycle (7-11 yr),yes,UNTESTABLE,0.359,"sinusoid amplitude, sd units",0.59 sd (15% variance share),167,Apr 2012-Mar 2026 growth (base 2011-12),MDES varshare 0.061; span 13.9yr < 2x longest period 11.0yr (span rule).,power at max amp (1.20 sd) = 1.0
+S3,IIP,T3,Monsoon periodicities,no,,,,,,,Monsoon periodicity bands are monsoon-specific claims; graded at S1.,
+S3,IIP,T4,Phillips curve,no,,,,,,,Graded where the inflation ruler lives (S4/S5).,
+S3,IIP,T5,Okun's law,no,,,,,,,No output-unemployment pair on this row (IIP is not the Okun output ruler in the registered design).,
+S3,IIP,T6,Political budget cycle,no,,,,,,,Not a fiscal panel; graded at S8.,
+S3,IIP,T7,Beta/sigma convergence,no,,,,,,,No cross-unit income panel.,
+S3,IIP,T8,Taylor rule / natural rate,no,,,,,,,Graded at S4.,
+S4,CPI Combined,T1,Kitchin cycle (3-5 yr),yes,UNDERPOWERED,0.747,"sinusoid amplitude, sd units",0.59 sd (15% variance share),180,Jan 2011-Dec 2025 (base 2012),MDES varshare 0.218; anchor < MDES <= 2x anchor; verdict capped at UNDERPOWERED (span < 4x longest period).,power at max amp (1.20 sd) = 0.995
+S4,CPI Combined,T2,Juglar cycle (7-11 yr),yes,UNTESTABLE,,"sinusoid amplitude, sd units",0.59 sd (15% variance share),180,Jan 2011-Dec 2025 (base 2012),"Span rule: clean span 15.0 yr < 2x longest Juglar period (22 yr); no simulation run, per registration sec 3a.",
+S4,CPI Combined,T3,Monsoon periodicities,no,,,,,,,Monsoon periodicity bands are monsoon-specific claims; graded at S1.,
+S4,CPI Combined,T4,Phillips curve,yes,UNDERPOWERED,0.289,pp inflation per 1 pp output gap,0.25,58,joint CPI base-2012 + GDP base-2011-12 quarters,MDES just above the literature anchor (sacrifice-ratio literature implies slopes ~0.25; published Indian estimates are 'imprecise' on post-1996 data - Patra et al. 2015-16).,"sigma_eps 1.1 pp, sd(gap) 1.4 pp (registered assumptions)."
+S4,CPI Combined,T5,Okun's law,no,,,,,,,No output-unemployment pair; Okun graded at S9.,
+S4,CPI Combined,T6,Political budget cycle,no,,,,,,,Not a fiscal panel; graded at S8.,
+S4,CPI Combined,T7,Beta/sigma convergence,no,,,,,,,No cross-unit income panel.,
+S4,CPI Combined,T8,Taylor rule / natural rate,yes,UNTESTABLE,,quarters of clean joint span,>=160 quarters TESTABLE; 100-159 UNDERPOWERED (registration sec 3c),58,"joint CPI base-2012 + GDP base-2011-12 + repo, Q1 2011-12-Q2 2025-26","Structural span rule: 58 clean quarters < 100-quarter floor for Laubach-Williams-class r* estimation on consistent rulers. RBI's published r* (1.4-1.9%) exists, but rests on spliced series plus model structure - it is not a data-only test under rule R1.",
+S5,WPI,T1,Kitchin cycle (3-5 yr),yes,UNDERPOWERED,0.697,"sinusoid amplitude, sd units",0.59 sd (15% variance share),169,Apr 2012-Apr 2026 (base 2011-12),MDES varshare 0.195; anchor < MDES <= 2x anchor; verdict capped at UNDERPOWERED (span < 4x longest period).,power at max amp (1.20 sd) = 1.0
+S5,WPI,T2,Juglar cycle (7-11 yr),yes,UNTESTABLE,,"sinusoid amplitude, sd units",0.59 sd (15% variance share),169,Apr 2012-Apr 2026 (base 2011-12),"Span rule: clean span 14.1 yr < 2x longest Juglar period (22 yr); no simulation run, per registration sec 3a.",
+S5,WPI,T3,Monsoon periodicities,no,,,,,,,Monsoon periodicity bands are monsoon-specific claims; graded at S1.,
+S5,WPI,T4,Phillips curve,yes,UNDERPOWERED,0.394,pp inflation per 1 pp output gap,0.25,58,joint WPI base-2011-12 + GDP base-2011-12 quarters,The ruler the classic Indian Phillips estimates (RBI 2002; Kapur & Patra 2003) were run on can now only be used cleanly for 58 quarters; WPI's higher residual variance worsens the MDES vs CPI.,"sigma_eps 1.5 pp, sd(gap) 1.4 pp (registered assumptions)."
+S5,WPI,T5,Okun's law,no,,,,,,,No output-unemployment pair; Okun graded at S9.,
+S5,WPI,T6,Political budget cycle,no,,,,,,,Not a fiscal panel; graded at S8.,
+S5,WPI,T7,Beta/sigma convergence,no,,,,,,,No cross-unit income panel.,
+S5,WPI,T8,Taylor rule / natural rate,no,,,,,,,"Taylor/natural-rate graded at S4 (the FIT target ruler is CPI, not WPI).",
+S6,Bank credit (SCB non-food),T1,Kitchin cycle (3-5 yr),yes,TESTABLE,0.504,"sinusoid amplitude, sd units",0.59 sd (15% variance share),272,Mar 2003-Oct 2025 growth,MDES varshare 0.113; MDES <= anchor and span >= 4x longest period.,power at max amp (1.20 sd) = 1.0
+S6,Bank credit (SCB non-food),T2,Juglar cycle (7-11 yr),yes,UNDERPOWERED,0.469,"sinusoid amplitude, sd units",0.59 sd (15% variance share),272,Mar 2003-Oct 2025 growth,MDES varshare 0.099; MDES <= anchor; verdict capped at UNDERPOWERED (span < 4x longest period).,power at max amp (1.20 sd) = 1.0
+S6,Bank credit (SCB non-food),T3,Monsoon periodicities,no,,,,,,,Monsoon periodicity bands are monsoon-specific claims; graded at S1.,
+S6,Bank credit (SCB non-food),T4,Phillips curve,no,,,,,,,Graded where the inflation ruler lives (S4/S5).,
+S6,Bank credit (SCB non-food),T5,Okun's law,no,,,,,,,No output-unemployment pair.,
+S6,Bank credit (SCB non-food),T6,Political budget cycle,no,,,,,,,Not a fiscal panel; graded at S8.,
+S6,Bank credit (SCB non-food),T7,Beta/sigma convergence,no,,,,,,,No cross-unit income panel.,
+S6,Bank credit (SCB non-food),T8,Taylor rule / natural rate,no,,,,,,,Graded at S4.,
+S7,Merchandise trade (exports),T1,Kitchin cycle (3-5 yr),yes,TESTABLE,0.422,"sinusoid amplitude, sd units",0.59 sd (15% variance share),312,Apr 2000-Mar 2026 growth,MDES varshare 0.082; MDES <= anchor and span >= 4x longest period.,power at max amp (1.20 sd) = 1.0
+S7,Merchandise trade (exports),T2,Juglar cycle (7-11 yr),yes,UNDERPOWERED,0.374,"sinusoid amplitude, sd units",0.59 sd (15% variance share),312,Apr 2000-Mar 2026 growth,MDES varshare 0.065; MDES <= anchor; verdict capped at UNDERPOWERED (span < 4x longest period).,power at max amp (1.20 sd) = 1.0
+S7,Merchandise trade (exports),T3,Monsoon periodicities,no,,,,,,,Monsoon periodicity bands are monsoon-specific claims; graded at S1.,
+S7,Merchandise trade (exports),T4,Phillips curve,no,,,,,,,Graded where the inflation ruler lives (S4/S5).,
+S7,Merchandise trade (exports),T5,Okun's law,no,,,,,,,No output-unemployment pair.,
+S7,Merchandise trade (exports),T6,Political budget cycle,no,,,,,,,Not a fiscal panel; graded at S8.,
+S7,Merchandise trade (exports),T7,Beta/sigma convergence,no,,,,,,,No cross-unit income panel.,
+S7,Merchandise trade (exports),T8,Taylor rule / natural rate,no,,,,,,,Graded at S4.,
+S8,State finances,T1,Kitchin cycle (3-5 yr),no,,,,,,,No business-cycle band claim is made for annual fiscal aggregates; the fiscal cycle claim is T6.,
+S8,State finances,T2,Juglar cycle (7-11 yr),no,,,,,,,No business-cycle band claim is made for annual fiscal aggregates; the fiscal cycle claim is T6.,
+S8,State finances,T3,Monsoon periodicities,no,,,,,,,Monsoon periodicity bands are monsoon-specific claims; graded at S1.,
+S8,State finances,T4,Phillips curve,no,,,,,,,No inflation/output-gap pair; graded at S4/S5.,
+S8,State finances,T5,Okun's law,no,,,,,,,No output-unemployment pair; graded at S9.,
+S8,State finances,T6,Political budget cycle,yes,TESTABLE,0.2,"pp of GSDP (capital outlay, election-year effect)",0.25 pp of GSDP,952 state-years (28 states x 34 yrs; n_eff 359 after registered design effect),1990-91 to 2023-24 (RBI e-States),"TESTABLE on the primary (capital outlay) outcome - the panel design inverts the pilot's H3 problem: hopeless spectrally at annual frequency, ample as a regression. Deficit outcome: MDES 0.291 pp vs anchor 0.50 pp (TESTABLE) - so Khemani's 'no deficit effect' is also a gradeable statement on this span.",sigma_eps 0.55 pp (capital outlay) / 0.80 pp (deficit); sd(election dummy) 0.407; ICC 0.05 (registered assumptions).
+S8,State finances,T7,Beta/sigma convergence,no,,,,,,,Convergence is a GSDP income test; graded at S2.,
+S8,State finances,T8,Taylor rule / natural rate,no,,,,,,,Graded at S4.,
+S9,PLFS unemployment,T1,Kitchin cycle (3-5 yr),yes,UNTESTABLE,,"sinusoid amplitude, sd units",0.59 sd (15% variance share),24,quarterly urban CWS 2019Q1-2024Q4 (longest like-for-like PLFS span),"Span rule: 6.0 yr < 2x longest band period (10 yr); the annual usual-status span (7 points) is shorter still. No simulation run, per registration sec 3a.",
+S9,PLFS unemployment,T2,Juglar cycle (7-11 yr),yes,UNTESTABLE,,"sinusoid amplitude, sd units",0.59 sd (15% variance share),24,quarterly urban CWS 2019Q1-2024Q4 (longest like-for-like PLFS span),"Span rule: 6.0 yr < 2x longest band period (22 yr); the annual usual-status span (7 points) is shorter still. No simulation run, per registration sec 3a.",
+S9,PLFS unemployment,T3,Monsoon periodicities,no,,,,,,,Monsoon periodicity bands are monsoon-specific claims; graded at S1.,
+S9,PLFS unemployment,T4,Phillips curve,no,,,,,,,Phillips graded where the inflation ruler lives (S4/S5); an unemployment-gap variant inherits the S9 span problem graded at T5.,
+S9,PLFS unemployment,T5,Okun's law,yes,UNTESTABLE,0.159,"pp dUR per 1 pp growth (formula value, for the record)","0.30 (Okun rule-of-thumb, advanced economies)",7,PLFS annual usual status 2017-18 to 2023-24,UNTESTABLE by the registered minimum-n rule (clean n=7 < 20): a slope on 7 annual points - one of them the COVID year - is not a test of Okun's law. The formula MDES is reported for the record only; it is mechanically flattered by the COVID growth outlier inflating sd(x). Quarterly urban CWS pairing not graded (rule R5: urban-only CWS ruler vs national output).,"sigma_eps 0.45 pp, sd(growth deviation) 3.0 pp (registered assumptions, full-span incl. COVID per rule R6)."
+S9,PLFS unemployment,T6,Political budget cycle,no,,,,,,,Not a fiscal panel; graded at S8.,
+S9,PLFS unemployment,T7,Beta/sigma convergence,no,,,,,,,No cross-unit income panel.,
+S9,PLFS unemployment,T8,Taylor rule / natural rate,no,,,,,,,Graded at S4.,
+S10,CGWB groundwater,T1,Kitchin cycle (3-5 yr),no,,,,,,,Irregular assessment waves are not a fixed-frequency series; no cycle claim applies.,
+S10,CGWB groundwater,T2,Juglar cycle (7-11 yr),no,,,,,,,Irregular assessment waves are not a fixed-frequency series; no cycle claim applies.,
+S10,CGWB groundwater,T3,Monsoon periodicities,no,,,,,,,Not a rainfall series; monsoon bands graded at S1.,
+S10,CGWB groundwater,T4,Phillips curve,no,,,,,,,No price/output-gap content.,
+S10,CGWB groundwater,T5,Okun's law,no,,,,,,,No output/unemployment content.,
+S10,CGWB groundwater,T6,Political budget cycle,no,,,,,,,"Not a fiscal series; extraction responds to policy inside the future Shah build (ASSESSMENT sec B), not the Khemani design.",
+S10,CGWB groundwater,T7,Beta/sigma convergence,no,,,,,,,Block extraction is not an income panel; spatial extraction patterns belong to the Shah build.,
+S10,CGWB groundwater,T8,Taylor rule / natural rate,no,,,,,,,No monetary-policy system content.,
